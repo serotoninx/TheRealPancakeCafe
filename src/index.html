@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>the real pancake cafe</title>
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body style="background-color:black;">
+        <object data="../assets/frames/Frame 1.svg" type="image/svg+xml" style="right:10px; position:absolute;"></object>
+        <object id="text1" data="../assets/frame1/The Real.svg" type="image/svg+xml" style="right:500px; top:520px; position:absolute; opacity:0;"></object>
+        <object id="text2" data="../assets/frame1/Pancake Cafe.svg" type="image/svg+xml" style="right:350px; top:590px; position:absolute; opacity:0;"></object>
+        <a href="https://discord.gg/Bms6hWdKZc" id="discord-redirect" style="opacity:0; top:740px; right:900px; height:70px; width:70px; position:absolute;"><img src="../assets/discord-logo.png" style="width: 70px; height: 70px;"></a>
+        <a href="https://www.reddit.com/user/TheRealWorldMachine/" id="reddit-redirect" style="opacity:0; top:740px; right:800px; height:70px; width:70px; position:absolute;"><img src="../assets/reddit-logo.png" style="width: 70px; height: 70px;"></a>
+        <a href="https://www.youtube.com/channel/UCmnvhP43jrt9IpcP9DPWsoQ" id="youtube-redirect" style="opacity:0; top:740px; right:700px; height:70px; width:70px; position:absolute;"><img src="../assets/youtube-logo.png" style="width: 70px; height: 70px;"></a>
+        <script>
+           $("document").ready(function(){
+               $("#text1").animate({opacity: '1',top:'500'},1500,function(){
+               
+                    $("#discord-redirect").animate({opacity: '1',right:'750px'},1500)
+                    $("#reddit-redirect").animate({opacity: '1',right:'650px'},1800)
+                    $("#youtube-redirect").animate({opacity: '1',right:'550px'},2000)
+               })
+                $("#text2").animate({opacity: '1',top:'570'},4000)
+               })
+            
+
+        </script>
+    </body>
+</html>
